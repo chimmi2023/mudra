@@ -13,7 +13,9 @@ options = vision.GestureRecognizerOptions(base_options=base_options)
 recognizer = vision.GestureRecognizer.create_from_options(options)
 
 # STEP 3: Take photo 
-picture=st.camera_input("Take a picture of me")
+st.info("Strike a pose of one of the following hand gestures with your hands, and we'll put our cutting-edge hand gesture recognition technology to the test!: 👍🏽,☝🏽,🖐🏽,✌🏽,👊🏽,👎🏽,🤟🏽")
+picture=st.camera_input("") # Don't put anything into the quotes.
+
 
 if picture:
     #st.image(picture)
